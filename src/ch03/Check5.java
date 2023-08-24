@@ -1,0 +1,16 @@
+package ch03;
+
+import java.util.Scanner;
+
+public class Check5 {
+  public static void main(String[] args) {
+
+    int lengthTop = 5;
+    int lengthBottom = 10;
+    int height = 7;
+    double area = (double)((lengthTop+lengthBottom)*height/2) ;
+    double area1 = (lengthBottom+lengthTop)*height*1.0/2;
+    System.out.println(area);
+    System.out.println(area1);
+  }
+}
