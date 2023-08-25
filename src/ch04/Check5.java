@@ -1,4 +1,4 @@
-package ch4;
+package ch04;
 
 //4x+5y=60의 해를 구해 (x,y)로 출력하기. x,y는 10 이하의 자연수
 public class Check5 {
