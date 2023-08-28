@@ -1,27 +1,53 @@
 package ch06;
 
 public class Car {
-  String company = "현대자동차";
-  String model;
-  String color;
-  //boolean start;
-  //int speed;
-  int maxspeed = 350;
+  private int speed;
+  private boolean stop;
 
-  Car() {}
-  Car(String model){
+  public int getSpeed() {
+    return speed;
+  }
 
-    this(model,"은색", 250);
-    //this.model = model;
-    System.out.println("123");
+  public void setSpeed(int speed) {
+    if(speed<0){
+      this.speed = 0;
+      return;
+    } else{
+      this.speed = speed;
+    }
+
   }
-  Car(String model, String color){
-    this.model = model;
-    this.color = color;
+
+  public boolean isStop(){
+    return stop;
   }
-  Car(String model, String color, int maxspeed){
-    this.model = model;
-    this.color = color;
-    this.maxspeed = maxspeed;
+
+  public void setStop(boolean stop){
+    this.stop = stop;
+    if (stop == true) this.speed = 0;
   }
 }
+//  String company = "현대자동차";
+//  String model;
+//  String color;
+//  //boolean start;
+//  //int speed;
+//  int maxspeed = 350;
+//
+//  Car() {}
+//  Car(String model){
+//
+//    this(model,"은색", 250);
+//    //this.model = model;
+//    System.out.println("123");
+//  }
+//  Car(String model, String color){
+//    this.model = model;
+//    this.color = color;
+//  }
+//  Car(String model, String color, int maxspeed){
+//    this.model = model;
+//    this.color = color;
+//    this.maxspeed = maxspeed;
+//  }
+//}

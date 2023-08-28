@@ -2,15 +2,28 @@ package ch06;
 
 public class CarExample {
   public static void main(String[] args) {
-    Car car1 = new Car("1","2",3);
-    System.out.println(car1.company);
-    System.out.println(car1.model);
+    Car myCar = new Car();
+
+    myCar.setSpeed(-50);
+    System.out.println("현재속도: "+myCar.getSpeed());
+
+    myCar.setSpeed(60);
+    System.out.println("현재속도: "+myCar.getSpeed());
+
+    if(!myCar.isStop()){
+      myCar.setStop(true);
+    }
+    System.out.println("현재속도: "+myCar.getSpeed());
 
 
 
 
 
-//    System.out.println("제작회사: "+myCar.company);
+//    Car car1 = new Car("1","2",3);
+//    System.out.println(car1.company);
+//    System.out.println(car1.model);
+
+    //    System.out.println("제작회사: "+myCar.company);
 //    System.out.println("모델명: "+myCar.model);
 //    System.out.println("색깔: "+myCar.color);
 //    System.out.println("최고속도: "+ myCar.maxspeed);
