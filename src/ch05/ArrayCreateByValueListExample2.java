@@ -1,8 +1,5 @@
 package ch05;
 
-import java.util.Arrays;
-import java.util.Collection;
-
 public class ArrayCreateByValueListExample2 {
   public static void main(String[] args) {
     int[] scores;
@@ -15,6 +12,13 @@ public class ArrayCreateByValueListExample2 {
     System.out.println("총합: " + sum1);
 
     printItem(new int[]{83, 90, 87});
+
+    int[] a= new int[]{5,6,7};
+    System.out.println(a[0]);
+    System.out.println(a.length);
+    a=new int[]{1,2,3,4};
+    System.out.println(a[3]);
+    System.out.println(a.length); //문자열의 길이를 알고 싶을 때는 length() 중괄호 필수
   }
 
   public static void printItem(int[] scores) {
@@ -25,3 +29,4 @@ public class ArrayCreateByValueListExample2 {
 
   }
 }
+

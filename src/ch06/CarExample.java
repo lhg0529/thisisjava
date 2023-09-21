@@ -3,7 +3,7 @@ package ch06;
 public class CarExample {
   public static void main(String[] args) {
     Car myCar = new Car();
-
+    System.out.println(myCar);
     myCar.setSpeed(-50);
     System.out.println("현재속도: "+myCar.getSpeed());
 

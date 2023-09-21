@@ -1,7 +1,7 @@
 package ch05;
 
 public class AdvancedForExample {
-  public static void main(String[] args) {
+  public static void main() {
     int[] scores = {95,71,64,82,44};
     int sum = 0;
 

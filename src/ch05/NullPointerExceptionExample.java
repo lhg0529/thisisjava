@@ -2,10 +2,14 @@ package ch05;
 
 public class NullPointerExceptionExample {
   public static void main(String[] args) {
-    int[] intArray = null;
-//    intArray[0] = 10;
+    int[] intArray = new int[1];
+    intArray[0] = 10;
+  System.out.println(intArray[0]);
 
-    String str = null;
-  //  System.out.println("총 문자 수: " + str.length());
+    String str = "취업하고싶다ㅏㅏㅏ";
+    System.out.println(str.charAt(3));
+
   }
+
+
 }
