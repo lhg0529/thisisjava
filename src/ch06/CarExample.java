@@ -10,6 +10,8 @@ public class CarExample {
     myCar.setSpeed(60);
     System.out.println("현재속도: "+myCar.getSpeed());
 
+    System.out.println(myCar.isStop());
+
     if(!myCar.isStop()){
       myCar.setStop(true);
     }
